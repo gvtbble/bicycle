@@ -12,10 +12,100 @@ html, body {
 .wrapper {
   overflow: hidden;
   min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.content {
+  height: 100%;
+}
+
+.header {
+  background: url(../img/1.png) no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.header__menu {
+  display: flex;
+  max-width: 700px;
+  margin: 0 auto;
+  padding-top: 40px;
+  align-items: center;
+}
+
+.header__link {
+  display: block;
+  color: #4d4959;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 2.6px;
+  padding: 0 42px;
+  position: relative;
+}
+
+.header__link_about:before {
+  content: "";
+  background-color: #000;
+  height: 3px;
+  width: 100%;
+}
+
+.footer {
+  background-color: rgba(247, 247, 247, 0.603);
+}
+
+.footer__body {
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__info {
+  color: #848789;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 17.87px;
+  text-align: left;
+}
+.footer__info .footer__company {
+  font-family: "Lato - Bold";
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.footer__social-network {
+  margin: 0 -7.5px;
+}
+.footer__social-network .twitter {
+  padding: 0 7.5px;
+}
+.footer__social-network .facebook {
+  padding: 0 7.5px;
+}
+.footer__social-network .pinterest {
+  padding: 0 7.5px;
+}
+
+.footer__logo {
+  color: #848789;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 17.87px;
+  text-align: right;
+}
+.footer__logo span {
+  padding-right: 5px;
+  text-align: right;
 }
