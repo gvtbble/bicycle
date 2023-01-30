@@ -1,0 +1,21 @@
+@charset "UTF-8";
+@import url(../css/nullstyle.css);
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("../fonts/MYRIADPRO-REGULAR.eot");
+  src: local("☺"), url("../fonts/MYRIADPRO-REGULAR.woff") format("woff"), url("../fonts/MYRIADPRO-REGULAR.ttf") format("truetype"), url("../fonts/MYRIADPRO-REGULAR.svg") format("svg");
+}
+html, body {
+  font-family: "Lato";
+}
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.container {
+  max-width: 1300px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
