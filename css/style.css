@@ -60,6 +60,17 @@ html, body {
   width: 100%;
 }
 
+@media (max-width: 768px) {
+  .header__burger-menu {
+    width: 30px;
+    height: 20px;
+    overflow: auto;
+  }
+  .header__burger-menu span {
+    background-color: #000;
+    height: 2px;
+  }
+}
 .footer {
   background-color: rgba(247, 247, 247, 0.603);
 }
@@ -108,4 +119,88 @@ html, body {
 .footer__logo span {
   padding-right: 5px;
   text-align: right;
+}
+
+.container {
+  width: 1080px;
+  padding: 0 10px;
+  margin: auto;
+}
+
+.information__generation {
+  background-color: #f7f7f7;
+}
+
+.generation__logo {
+  padding: 117px 0 34px 0;
+}
+
+.logo {
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  color: #353738;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+}
+
+.generation__title {
+  font-size: 18px;
+  padding-bottom: 35px;
+}
+
+.text {
+  color: #848789;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+}
+
+.generation__text {
+  line-height: 34px;
+  font-size: 18px;
+}
+
+.information__body {
+  display: flex;
+  width: 100%;
+}
+
+.oliva__main-img {
+  flex: 1 0 66.666%;
+  display: block;
+  height: 100%;
+}
+.oliva__main-img img {
+  width: 66.666%;
+  height: 100%;
+}
+
+.oliva__item {
+  width: 33.33vh;
+  flex: 1 1 33.333%;
+}
+
+.item {
+  width: 400px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.oliva__logo {
+  padding-top: 70px;
+  padding-bottom: 31px;
+}
+
+.oliva__title {
+  padding-bottom: 26px;
+}
+
+.oliva__secondary {
+  text-align: left;
 }
