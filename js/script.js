@@ -8,7 +8,14 @@
 // 	});
 // 	body.classList.toggle("lock")
 // })
-
+function ibg(){
+	$.each($('.ibg'), function(index, val) {
+		if($(this).find('img').length>0){
+			$(this).css('background-image','url("'+$(this).find('img').attr('src')+'")');
+		}
+	});
+}
+ibg();
 
 let iconMenu=document.querySelector(".icon-menu");
 		let body=document.querySelector("body");
@@ -18,3 +25,6 @@ let iconMenu=document.querySelector(".icon-menu");
 		body.classList.toggle("lock");
 		menuBody.classList.toggle("active");
 	});
+
+
+	
