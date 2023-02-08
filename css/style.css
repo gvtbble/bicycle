@@ -397,3 +397,28 @@ html, body {
     padding: 0 0 70% 0;
   }
 }
+
+.slider {
+  background-color: #f7f7f7;
+  padding: 120px 0 60px 0;
+  text-align: center;
+}
+.slider__icon {
+  margin-bottom: 20px;
+}
+.slider__title {
+  margin-bottom: 20px;
+  color: #353738;
+  font-size: 18px;
+  font-weight: 700;
+}
+.slider__title span {
+  font-weight: 400;
+  color: #848789;
+}
+.slider__text {
+  color: #848789;
+  font-size: 24px;
+  font-style: italic;
+  line-height: 34px;
+}
