@@ -222,6 +222,47 @@ html, body {
   padding-top: 70px;
 }
 
+.slick-slider {
+  position: relative;
+}
+.slick-slider .slick-list {
+  overflow: hidden;
+}
+.slick-slider .slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+.slick-slider .slick-dots {
+  padding: 100px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slick-slider .slick-dots li {
+  margin: 0px 5px;
+}
+.slick-slider .slick-dots li button {
+  font-size: 0;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 1px solid #c8c8c8;
+  background-color: transparent;
+}
+.slick-slider .slick-dots li.slick-active button {
+  background-color: #a9afb3;
+}
+@media (max-width: 1100px) {
+  .slick-slider .slick-dots {
+    padding: 50px 0px 0px 0px;
+  }
+}
+@media (max-width: 767px) {
+  .slick-slider .slick-dots {
+    padding: 30px 0px 0px 0px;
+  }
+}
+
 .footer {
   background-color: rgba(247, 247, 247, 0.603);
 }
@@ -362,9 +403,9 @@ html, body {
 }
 
 .item {
+  height: 100%;
   display: block;
   position: relative;
-  height: 100%;
 }
 .item__image {
   position: absolute;
@@ -403,26 +444,65 @@ html, body {
 .slider {
   background-color: #f7f7f7;
   padding: 120px 0 60px 0;
+  overflow: hidden;
+}
+@media (max-width: 1100px) {
+  .slider {
+    padding: 80px 0 60px 0;
+  }
+}
+.slider__item {
   text-align: center;
 }
 .slider__icon {
-  margin-bottom: 20px;
+  margin: 0px 0px 35px 0px;
 }
 .slider__title {
-  margin-bottom: 20px;
   color: #353738;
   font-size: 18px;
   font-weight: 700;
+  margin: 0px 0px 20px 0px;
 }
 .slider__title span {
-  font-weight: 400;
+  font-weight: 300;
   color: #848789;
 }
 .slider__text {
+  text-align: center;
   color: #848789;
   font-size: 24px;
   font-style: italic;
   line-height: 34px;
+}
+@media (max-width: 767px) {
+  .slider {
+    padding: 50px 0 30px 0;
+  }
+  .slider__icon {
+    margin: 0px 0px 25px 0px;
+  }
+  .slider__title {
+    margin: 0px 0px 15px 0px;
+  }
+}
+
+.shop__body {
+  display: flex;
+}
+.shop__column {
+  flex: 0 1 16.667%;
+}
+.shop__column_b {
+  flex: 0 1 33.333%;
+}
+.block-shop__row {
+  display: flex;
+}
+.block-shop__column {
+  flex: 0 1 50%;
+}
+.block-shop__item_b {
+  padding: 0 0 200.5% 0;
 }
 
 .black {
