@@ -327,6 +327,7 @@ html, body {
 }
 .brands__image {
   padding: 0 0 37.51% 0;
+  filter: contrast(1.5);
 }
 @media (max-width: 1100px) {
   .brands__row {
@@ -371,6 +372,7 @@ html, body {
   height: 100%;
   top: 0;
   left: 0;
+  filter: contrast(1.5);
 }
 .item__logo {
   position: absolute;
@@ -421,4 +423,78 @@ html, body {
   font-size: 24px;
   font-style: italic;
   line-height: 34px;
+}
+
+.black {
+  height: 200px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.black__discover {
+  border: 2px solid #fff;
+  background-color: #000;
+  transition: all 0.7s ease 0s;
+}
+.black__discover:hover {
+  background-color: #fff;
+  border: 2px solid #000;
+}
+.black__discover:hover a {
+  color: #000;
+}
+.black__discover a {
+  color: #fff;
+  padding: 20px 60px;
+  display: block;
+}
+@media (max-width: 1100px) {
+  .black {
+    height: 150px;
+  }
+}
+@media (max-width: 767px) {
+  .black {
+    height: 100px;
+  }
+}
+
+.form__body {
+  padding: 110px 0;
+  text-align: center;
+}
+.form__logo {
+  display: block;
+  padding-bottom: 40px;
+}
+.form__text {
+  color: #848789;
+  font-size: 24px;
+  font-style: italic;
+  line-height: 34px;
+  padding-bottom: 35px;
+}
+.form__buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons__1 {
+  width: 400px;
+  height: 70px;
+  padding: 28px 0 28px 28px;
+  color: #929292;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 24px;
+  text-align: center;
+  border: 2px solid #e4e6e7;
+}
+
+.buttons__2 {
+  display: block;
+  background-color: #64c29e;
+  color: #fff;
+  padding: 26px 45px;
 }
